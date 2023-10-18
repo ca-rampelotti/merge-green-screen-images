@@ -1,0 +1,33 @@
+<script src='https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js'>
+</script>
+
+<h1> Merge a green screen</h1>
+
+
+<canvas id ='canvas1'>
+
+</canvas>
+
+
+<canvas id ='canvas2'>
+
+</canvas>
+
+
+<canvas id ='canvas3'>
+
+</canvas>
+
+
+<p>
+  Foreground 
+  <input type = 'file' onchange = 'loadForeground()' alert = 'foreground image loaded' multiple = 'false' accept = 'image/*' id='fore'> 
+  Background
+  <input type = 'file' onchange= 'loadBackground()' alert = 'background image loaded' multiple = 'false' accept = 'image/*' id = 'back'>
+</p>
+
+<p>
+  <input type="button" value="Create Composite" onclick="doGreenScrean()" alert = 'images merged'>
+
+  <input type='button' value='Clear Canvases' onclick='clearCanvas()' alert = 'canvas cleared'>
+</p>
